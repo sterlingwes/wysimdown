@@ -1,0 +1,44 @@
+.wysimdown {
+    position: relative;
+
+    textarea {
+        position: absolute;
+        top: 1px; right: 1px;
+        width: 100px; height: 35px;
+        
+        &.show {
+            position: relative;
+            top: auto; right: auto; width: 100%; height: auto;
+        }
+    }
+    
+    .wysimdown-container {
+        
+        position: relative;
+        
+        .wysimdown-textarea, .wysimdown-cursorarea {
+            padding: 5px;
+        }
+        
+        .wysimdown-textarea {
+            position: relative;
+            min-height: 80px;
+            color: #333;
+            cursor: text;
+        }
+
+        .wysimdown-cursorarea {
+            position: absolute;
+            top: 0; left: 0; bottom: 0; right: 0;
+            color: transparent;
+            background-color: #f0f0f0;
+
+            img.wysimdown-cursor {
+                width: 1px;
+                height: 15px; // needs to resize with font weight
+                background-image: url(../img/cursor.gif);
+            }
+        }
+    }
+
+}
